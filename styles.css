@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main--moderate-violet: hsl(263, 55%, 52%);
+  --main--very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --main--very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --main--white: hsl(0, 0%, 100%);
+
+  --main--light-gray: hsl(0, 0%, 81%);
+  --main--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.purple-container {
+  width: 70%;
+  height: 50%;
+  background-color: var(--main--moderate-violet);
+  border-radius: 10px;
+  padding: 30px;
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position-x: 500px;
+  color: rgb(242, 226, 242);
+}
+
+.purple-author {
+  border-radius: 50%;
+  border: 3px solid rgb(159, 112, 166);
+}
