@@ -13,10 +13,43 @@
   --main--light-gray: hsl(0, 0%, 81%);
   --main--light-grayish-blue: hsl(210, 46%, 95%);
 }
+body {
+  background-color: var(--main--light-gray);
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+}
+
+/* containers one by one */
+
+.author-info-container {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 20px;
+  width: fit-content;
+}
+
+.name-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.verified {
+  opacity: 60%;
+  margin-top: -5px;
+}
+
+.h1-white {
+  text-wrap: wrap;
+  margin: 20px 0px;
+}
+.paragraph {
+  opacity: 60%;
+  text-wrap: wrap;
+}
 
 .purple-container {
-  width: 70%;
-  height: 50%;
   background-color: var(--main--moderate-violet);
   border-radius: 10px;
   padding: 30px;
@@ -27,7 +60,88 @@
   color: rgb(242, 226, 242);
 }
 
-.purple-author {
+.author-image-purple {
   border-radius: 50%;
   border: 3px solid rgb(159, 112, 166);
+}
+
+.grey-container {
+  background-color: var(--main--very-dark-grayish-blue);
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.author-image-grey {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.white-container {
+  background-color: var(--main--white);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--main--very-dark-grayish-blue);
+}
+
+.author-image-white {
+  border-radius: 50%;
+  border: 3px solid var(--main--very-dark-grayish-blue);
+}
+
+.black-container {
+  background-color: var(--main--very-dark-blackish-blue);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--main--white);
+}
+
+.author-image-black {
+  width: auto;
+  border-radius: 50%;
+  border: 3px solid var(--main--very-dark-grayish-blue);
+}
+
+.long-container {
+  width: 25%;
+  margin-top: 0;
+  background-color: var(--main--white);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--main--very-dark-grayish-blue);
+  border: black solid;
+}
+
+.author-image-long {
+  border-radius: 50%;
+  border: 3px solid var(--main--very-dark-grayish-blue);
+}
+
+/* End containers one by one */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  border: rgb(147, 39, 39) solid;
+  gap: 30px;
+  height: 70vh;
+}
+
+.upper-containers {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+}
+
+.lower-containers {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+.left-containers {
+  display: flex;
+  border: black solid;
+  flex-direction: column;
+  gap: 30px;
 }
