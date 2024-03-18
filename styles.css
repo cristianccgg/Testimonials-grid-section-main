@@ -16,8 +16,8 @@
 body {
   background-color: var(--main--light-gray);
   width: 100%;
-  height: 100vh;
-  padding: 10%;
+  max-height: 100vh;
+  font-size: 13px;
 }
 
 /* containers one by one */
@@ -27,36 +27,43 @@ body {
   justify-content: flex-start;
   column-gap: 20px;
   width: fit-content;
+  border: solid;
 }
 
 .name-description-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: solid;
 }
 
 .verified {
   opacity: 60%;
   margin-top: -5px;
+  border: solid;
 }
 
 .h1-white {
-  text-wrap: wrap;
   margin: 20px 0px;
+  border: solid white;
 }
 .paragraph {
+  width: 100%;
+  height: 100%;
   opacity: 60%;
   text-wrap: wrap;
+  border: solid black;
 }
 
 .purple-container {
+  width: 70%;
   background-color: var(--main--moderate-violet);
   border-radius: 10px;
   padding: 30px;
   background-image: url(/images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right;
-  background-position-x: 500px;
+  background-position-x: 400px;
   color: rgb(242, 226, 242);
 }
 
@@ -66,6 +73,7 @@ body {
 }
 
 .grey-container {
+  width: 30%;
   background-color: var(--main--very-dark-grayish-blue);
   border-radius: 10px;
   padding: 30px;
@@ -73,11 +81,14 @@ body {
 }
 
 .author-image-grey {
+  width: auto;
   border-radius: 50%;
   border: 3px solid white;
 }
 
 .white-container {
+  max-width: 30%;
+  margin: 0px;
   background-color: var(--main--white);
   border-radius: 10px;
   padding: 30px;
@@ -90,6 +101,7 @@ body {
 }
 
 .black-container {
+  max-width: 70%;
   background-color: var(--main--very-dark-blackish-blue);
   border-radius: 10px;
   padding: 30px;
@@ -103,8 +115,7 @@ body {
 }
 
 .long-container {
-  width: 25%;
-  margin-top: 0;
+  width: 30%;
   background-color: var(--main--white);
   border-radius: 10px;
   padding: 30px;
@@ -121,27 +132,28 @@ body {
 
 .main-container {
   display: flex;
-  flex-direction: row;
-  border: rgb(147, 39, 39) solid;
   gap: 30px;
-  height: 70vh;
+  border: solid blue;
+  width: 70%;
+  height: 70%;
 }
 
 .upper-containers {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 20px;
+  display: flex;
+  border: solid pink;
+  gap: 30px;
 }
 
 .lower-containers {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
+  display: flex;
+  gap: 30px;
+  border: yellowgreen solid;
 }
 
 .left-containers {
   display: flex;
-  border: black solid;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
+  padding: 0;
+  border: black solid;
 }
