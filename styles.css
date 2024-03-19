@@ -13,7 +13,7 @@
   --main--light-grayish-blue: hsl(210, 46%, 95%);
 }
 body {
-  background-color: var(--main--light-gray);
+  background-color: var(--main--light-grayish-blue);
   font-size: 13px;
   display: flex;
   justify-content: center;
