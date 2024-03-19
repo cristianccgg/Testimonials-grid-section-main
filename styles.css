@@ -75,7 +75,7 @@ img {
 .purple {
   grid-column: 1/3;
   background-color: var(--main--moderate-violet);
-  background-image: url(bg-pattern-quotation.svg);
+  background-image: url(./images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 80% 0;
   color: rgb(242, 226, 242);
